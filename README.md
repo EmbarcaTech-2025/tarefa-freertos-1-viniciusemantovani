@@ -10,9 +10,11 @@ Instituição: EmbarcaTech - HBr
 Campinas, Junho de 2025
 
 ---
+
 # Tarefa: Roteiro de FreeRTOS #1 - EmbarcaTech 2025
 
 Este é um programa simples usando FreeRTOS, no qual o LED principal da BitDogLab altera periodicamente sua cor, enquanto que o buzzer mantém-se, em paralelo a isso, emitindo sons periodicamente. Finalmente, tem-se os botões A e B funcionando, respectivamente, como formas de suspender a task do LED (LED congela como estava no momento do pressionamento) e, suspender a task do Buzzer, de modo que o Buzzer se mantém silenciado, caso este fosse seu estado durante o pressionamento do botão ou, emitindo som, caso este fosse o estado no pressionamento.
+
 ---
 
 ##  Lista de materiais: 
