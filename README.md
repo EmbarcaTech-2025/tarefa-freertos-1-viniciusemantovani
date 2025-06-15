@@ -70,6 +70,22 @@ Método automatizado! SOMENTE NO LINUX!
 
 ---
 
+## Reflexão:
+
+### O que acontece se todas as tasks tiverem a mesma prioridade?
+
+No FreeRTOS, quando as tarefas têm a mesma prioridade, têm tempos iguais de CPU quanto prontas. Nesse caso, haveria a possibilidade de o clique de um botão não ser identificado por conta de outra tarefa estar sendo executada no momento de seu pressionamento.
+
+### Qual tarefa consome mais tempo da CPU?
+
+A tarefa que consome mais tempo é aquela de maior prioridade.
+
+### Quais seriam os riscos de usar polling sem prioridades?
+
+Permitir que tarefas que deveriam ser executadas imediatamente no caso de sensoriamento e atuação, por exemplo, fossem retardadas por outra tarefa que usa a CPU nesse determinado momento.
+
+---
+
 ## 📜 Licença
 GNU GPL-3.0.
 
