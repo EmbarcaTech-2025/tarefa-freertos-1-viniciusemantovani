@@ -36,8 +36,8 @@ project(embarcatech-freertos-tarefa-1 C CXX ASM)
 pico_sdk_init()
 
 add_executable(embarcatech-freertos-tarefa-1
-    src/main.c
-    hal/buzzer_pwm.c
+    src/app/main.c
+    src/hal/buzzer_pwm.c
 )
 
 target_include_directories(embarcatech-freertos-tarefa-1 PRIVATE

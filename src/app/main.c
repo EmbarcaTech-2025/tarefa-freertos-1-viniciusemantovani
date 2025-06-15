@@ -8,17 +8,19 @@
 #include "include/buzzer_pwm.h"
 
 // Definição dos pinos dos botões:
-const uint8_t BUTTON_A = 5;
-const uint8_t BUTTON_B = 6;
+#define BUTTON_A = 5;
+#define BUTTON_B = 6;
+
+// Definição dos pinos do LED RGB:
+#define LED_PIN_GREEN = 11;
+#define LED_PIN_BLUE = 12;
+#define LED_PIN_RED = 13;
 
 TaskHandle_t led_task_handle = NULL;
 TaskHandle_t buzzer_task_handle = NULL;
 
 void led_task() {
 
-  const uint LED_PIN_GREEN = 11;
-  const uint LED_PIN_BLUE = 12;
-  const uint LED_PIN_RED = 13;
   gpio_init(LED_PIN_GREEN);
   gpio_set_dir(LED_PIN_GREEN, GPIO_OUT);
   gpio_init(LED_PIN_BLUE);
