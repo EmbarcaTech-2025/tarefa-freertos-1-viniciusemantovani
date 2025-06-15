@@ -36,7 +36,7 @@ project(embarcatech-freertos-tarefa-1 C CXX ASM)
 pico_sdk_init()
 
 add_executable(embarcatech-freertos-tarefa-1
-    main.c
+    src/main.c
 )
 
 target_include_directories(embarcatech-freertos-tarefa-1 PRIVATE
