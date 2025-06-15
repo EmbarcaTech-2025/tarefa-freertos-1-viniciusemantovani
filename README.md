@@ -25,6 +25,7 @@ Este é um programa simples usando FreeRTOS, no qual o LED principal da BitDogLa
 | BitDogLab (Pi Pico W - RP2040) | -                |
 | Botões (dois)      | GPIOs 5 e 6 (pull-up)        |  
 | Buzzer             | PWM: GPIO21                  |
+| LED RGB            | GPIOs 11, 12 e 13 (output)   |
 ---
 
 ## Execução - Opção 1
