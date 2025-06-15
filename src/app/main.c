@@ -93,9 +93,9 @@ void button_task() {
 int main() {
   stdio_init_all();
 
-  xTaskCreate(led_task, "LED_Task", 256, NULL, 2, &led_task_handle);
-  xTaskCreate(buzzer_task, "BUZZER_Task", 256, NULL, 2, &buzzer_task_handle);
-  xTaskCreate(button_task, "BUTTON_Task", 256, NULL, 1, NULL);
+  xTaskCreate(led_task, "LED_Task", 256, NULL, 1, &led_task_handle);
+  xTaskCreate(buzzer_task, "BUZZER_Task", 256, NULL, 1, &buzzer_task_handle);
+  xTaskCreate(button_task, "BUTTON_Task", 256, NULL, 2, NULL);
   vTaskStartScheduler();
 
   while(1){};
